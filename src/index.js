@@ -4,7 +4,7 @@ var form_parts = []
 
 function next() {
     if (current_part >= num_of_parts-1) {
-        window.location.href = window.location.origin + '/confirm.html'
+        window.location.href = '/confirm.html'
     } else {
         form_parts[current_part].style.display = 'none'
         current_part+=1
@@ -29,7 +29,6 @@ function prev() {
 }
 
 function update_button_states() {
-    console.log('hjere')
     if (current_part == (num_of_parts - 1)) {
         document.getElementById("nextBtn").innerHTML = "Submit";
     } else {
