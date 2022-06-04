@@ -4,7 +4,7 @@ var form_parts = []
 
 function next() {
     if (current_part >= num_of_parts-1) {
-        window.location.href = '/confirm.html'
+        window.location.href += '/../confirm.html'
     } else {
         form_parts[current_part].style.display = 'none'
         current_part+=1
